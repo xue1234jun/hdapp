@@ -1,0 +1,88 @@
+body
+{
+	background: #132b2f;
+}
+.mui-bar-nav.mui-bar .mui-icon
+{
+	margin-left: 0;
+}
+.mui-bar{
+	background: #132B2F;
+	box-shadow: 0 1px 1px #285D62;
+	height: 50px;
+	padding-top: 5px;
+}
+.mui-title{
+	color: #FFFFFF;
+	font-family: "微软雅黑";
+	font-size: 28px;
+	left: 30%;
+}
+a
+{
+	color: #FFFFFF;
+}
+.mui-content
+{
+	background: #132b2f;
+}
+.detail-person
+{
+	width: 100%;
+	background-color: #1f464d;
+	margin-top: 40px;
+	height: 120px;
+	margin-bottom: 40px;
+}
+.detail-person img
+{
+	display: inline-block;
+	margin-top: 10px;
+	height:100px;
+	float: left;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+.detail-right-div
+{
+	height: 100%;
+	display: inline-block;
+	margin-top: 24px;
+	float: left;
+}
+
+.detail-person label,.night-mode label
+{
+	color: #47a2b2;
+	font-family: "微软雅黑";
+}
+.night-mode
+{
+	width: 100%;
+	background-color: #1f464d;
+	height: 60px;
+	margin-bottom: 40px;
+}
+.night-mode-name
+{
+	display: inline-block;
+	margin-top: 18px;
+	float: left;
+	margin-left: 20px;
+}
+.mui-switch{
+	float: right;
+	margin-right: 30px;
+	margin-top: 14px;
+}
+.button-exit{
+	border-radius: 0;
+	background: #;
+	height: 50px;
+	background-color: #b30000;
+	color: #FFFFFF;
+	font-family: "微软雅黑";
+	font-size: 22px;
+	width: 100%;
+	border: 0;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>事件报警</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/warningaction.css" />
+
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<div class="mui-segmented-control">
+				<!--lefttitle titleactive  righttitle -->
+				<a id="leftTitle" onclick="productview()" class=" mui-control-item mui-active" href="#leftcontent">生产越限记录</a>
+				<a id="rightTitle" onclick="dischargeview()" class="mui-control-item" href="#rightcontent">排放超标记录</a>
+			</div>
+			<a class="mui-icon mui-icon-gear mui-pull-right" href="setting.html"></a>
+		</header>
+		<nav class="mui-bar mui-bar-tab">
+			<a id="defaultTab" class="mui-tab-item" href="#">
+				<img src="../img/icon-zyxx.png" /><br />
+				<label>主要信息</label>
+			</a>
+			<a class="mui-tab-item " href="realtimedifference.html">
+				<img src="../img/icon-sshc.png" /><br />
+				<label>实时耗差</label>
+			</a>
+			<a class="mui-tab-item mui-active" href="warningaction.html">
+				<img src="../img/icon-bj.png" /><br />
+				<label>事件报警</label>
+
+			</a>
+			<a class="mui-tab-item" href="xzbcx.html">
+				<img src="../img/icon-xzbcx.png" /><br />
+				<label>小指标查询</label>
+			</a>
+		</nav>
+		<div class="mui-content mui-draggable ">
+			<label id="todayDate"></label>
+			<div class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-primary">
+				<a id="firstday" onclick="changedata()" class=" mui-control-item" href="#"></a>
+				<a id="secondday" onclick="changedata()" class="mui-control-item" href="#"></a>
+				<a id="threeday" onclick="changedata()" class=" mui-control-item" href="#"></a>
+				<a id="fourday" onclick="changedata()" class="mui-control-item" href="#"></a>
+				<a id="fiveday" onclick="changedata()" class=" mui-control-item" href="#leftcontent"></a>
+				<a id="sixday" onclick="changedata()" class="mui-control-item" href="#leftcontent"></a>
+				<a id="sevenday" onclick="changedata()" class="mui-control-item mui-active" href="#">今日</a>
+			</div>
+			<div class="mui-scroll-wrapper">
+				<div id="leftcontent" style="padding-bottom: 5px;height: 550px;" class="div-content mui-control-content mui-scroll mui-active">
+					<table>
+						<thead>
+							<tr style="height: 35px;">
+								<th style="width: 20%;">指标名</th>
+								<th style="width: 20%;">开始时间</th>
+								<th style="width: 20%;">结束时间</th>
+								<th style="width: 20%;">最大值</th>
+								<th style="width: 20%;">基准值</th>
+							</tr>
+						</thead>
+
+						<tbody id="tableList-left">
+						</tbody>
+					</table>
+				</div>
+				<div id="rightcontent" style="padding-bottom: 5px;" class="div-content mui-control-content">
+					<table>
+						<thead>
+							<tr style="height: 35px;">
+								<th style="width: 20%;">指标名</th>
+								<th style="width: 20%;">开始时间</th>
+								<th style="width: 20%;">结束时间</th>
+								<th style="width: 20%;">最大值</th>
+								<th style="width: 20%;">基准值</th>
+							</tr>
+						</thead>
+
+						<tbody id="tableList-right">
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="../js/loading.js"></script>
+		<!--<script type="text/javascript" src="../js/cordova.js" ></script>-->
+		<script type="text/javascript" src="../js/physicalButtonsListener.js"></script>
+		<script type="text/javascript" src="../js/handlebars-v4.0.5.js"></script>
+		<!--Handlebars.js模版-->
+		<!--Handlebars.js模版放在script标签中，保留了html原有层次结构,模版中要写一些操作语句-->
+		<!--id可以用来唯一确定一个模版,type是模版固定的写法-->
+		<script id="table-template" type="text/x-handlebars-template">
+			{{#each this}}
+			<tr style="height: 45px;">
+				<td>{{breaklines name}}</td>
+				<td>{{data1}}</td>
+				<td>{{data2}}</td>
+				<td>{{data3}}</td>
+				<td>{{data4}}</td>
+			</tr>
+			{{/each}}
+		</script>
+		<script type="text/javascript" src="../js/warningaction.js"></script>
+	</body>
+
+</html>

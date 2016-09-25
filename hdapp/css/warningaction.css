@@ -1,0 +1,173 @@
+@font-face {
+	font-family: mui;
+	src: url('../fonts/mui.ttf');
+}
+
+body {
+	background: #132b2f;
+}
+.mui-scroll-wrapper
+{
+	top: 120px;
+}
+.mui-content {
+	background: #132b2f;
+}
+
+.mui-bar-nav.mui-bar .mui-icon {
+	margin-right: 5px;
+}
+
+.mui-bar .mui-icon {
+	font-size: 28px;
+	padding-top: 8px;
+}
+
+.mui-bar-tab {
+	height: 60px;
+	border-top: solid 1px #285D62;
+}
+
+.mui-bar {
+	background: #132B2F;
+	box-shadow: 0 1px 1px #285D62;
+	height: 50px;
+}
+
+.mui-bar-nav {
+	padding-top: 5px;
+}
+
+.mui-bar .mui-segmented-control {
+	border: 0;
+	top: 4px;
+}
+
+#leftTitle,
+#rightTitle {
+	color: #F2F2F2;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	height: 35px;
+	width: 40%;
+	line-height: 30px;
+	border: 1px solid #47A2B2;
+	text-align: center;
+}
+
+.mui-segmented-control .mui-control-item.mui-active {
+	background: #47A2B2;
+	color: #FFFFFF;
+}
+
+#leftTitle {
+	border-right: 0;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+#rightTitle {
+	border-left: 0;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.titleactive {
+	background: #47A2B2;
+	color: #FFFFFF;
+}
+
+header a:active {
+	color: #FFFFFF;
+}
+
+header>a {
+	margin-top: -36px;
+}
+
+a {
+	color: #FFFFFF;
+}
+
+a label {
+	font-family: "微软雅黑";
+	font-size: 14px;
+	/*color: #FFFFFF;*/
+}
+
+.mui-bar-tab .mui-tab-item {
+	color: #FFFFFF;
+}
+
+.mui-bar-tab .mui-tab-item.mui-active {
+	color: #47a2b2;
+}
+
+.mui-bar-tab .mui-tab-item {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.mui-bar-tab img {
+	height: 30px;
+}
+
+.div-label {
+	background: url(../img/tag1.png) no-repeat;
+	background-size: 80px 28px;
+	padding-top: 2px;
+}
+
+#todayDate {
+	display: block;
+	margin: 15px 15px 0 15px;
+	color: #47A2B2;
+	font-family: '微软雅黑';
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item
+{
+	color: #e5e5e5;
+	font-family: "微软雅黑";
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active
+{
+	color: #47A2B2;
+	border: 0;
+}
+table {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+table thead {
+	background: #1F464D;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #47A2B2;
+	/*height: 60px;*/
+}
+
+table>thead>tr>th {
+	width: 50px;
+}
+
+table>tbody>tr {
+	height: 30px;
+	color: #e6e6e6;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	text-align: center;
+}
+
+table>tbody>tr>td:first-child {
+	color: #47A2B2;
+	width: 60px;
+}
+
+table>tbody>tr:nth-of-type(odd) {
+	background: #245159;
+}
+
+table>tbody>tr:nth-of-type(even) {
+	background: #295d66;
+}
