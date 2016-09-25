@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>设置</title>
+    <script src="../js/mui.min.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/setting.css" />
+    <script type="text/javascript" src="../js/jquery-1.11.0.js"></script>
+    <script type="text/javascript" charset="utf-8">
+    $(function()
+    {
+    	mui.init();
+      	mui('body').on('tap', 'a', function() {
+		document.location.href = this.href;
+		})
+    });
+    </script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"  href="realtimedifference.html"></a>
+	    <h1 class="mui-title">设&nbsp;&nbsp;&nbsp;&nbsp;置</h1>
+	</header>
+	<div class="setting-content mui-content">
+		<div class="detail-person">
+			<img src="../img/img-head2.png"/>
+			<div class="detail-right-div">
+				<label class="person-name" style="font-size: 22px;">姓名</label><br/><br />
+				<label class="person-department" style="font-size: 16px;">部门:某某部</label>
+			</div>
+			
+		</div>
+		<div class="night-mode">
+			<label class="night-mode-name" style="font-size: 22px;">夜间模式</label>
+			<!-- 蓝色开关打开状态 -->
+			<div class="mui-switch mui-switch-blue mui-active">
+  				<div class="mui-switch-handle"></div>
+			</div>
+		</div>
+		<button type="button" class="button-exit">退出当前账号</button>
+	</div>
+	
+</body>
+</html>
